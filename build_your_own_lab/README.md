@@ -1,6 +1,6 @@
 # Building Your Own Penetration Testing Lab
 
-The following are some tips and instructions on how you can build your own lab for web application penetration testing, including deploying intentionally vulnerable applications in a safe environment.
+The following are some tips and instructions on how you can build your own lab for penetration testing and to practice different defensive techniques helpful for incident response and digital forensics.
 
 ## Pen Testing Linux Distributions
 
@@ -11,7 +11,7 @@ Note: The folks at Offensive Security have created a free training and book that
 
 - [Parrot](https://www.parrotsec.org): is another popular Linux distribution used by many pen testers and security researchers. You can also install it in bare-metal and in virtual machines. You can download Parrot from https://www.parrotsec.org
 
-- [BlackArch Linux](https://blackarch.org): this distribution comes with over 1900 different tools and packages and it is also gaining popularity. You can download BlackArch Linux from: https://blackarch.org
+- [BlackArch Linux](https://blackarch.org): this distribution comes with over 2300 different tools and packages and it is also gaining popularity. You can download BlackArch Linux from: https://blackarch.org
 
 ## Vulnerable Servers and Applications
 
@@ -29,11 +29,19 @@ The purpose of this VM is to have a lightweight (single VM) with a few web appli
 ### Getting Started
 
 1. Download VirtualBox. 
-2. Download the .ova file from http://h4cker.org/websploit and import it in VirtualBox. 
+2. Download the .ova file from http://websploit.org and import it in VirtualBox. Alternatively, download Kali or Parrot and then run `curl -sSL https://websploit.org/install.sh | sudo bash`. 
 
 The following are the vulnerable applications included in [WebSploit](https://websploit.h4cker.org/):
 - Damn Vulnerable Web Application (DVWA)
+- Damn Vulnerable Node Application (DVNA)
 - WebGoat
 - Hackazon
 - OWASP Juice Shop
 - OWASP Mutillidae 2
+- bWapp2
+- hackme-rtov
+
+## Cloud-Based Cyber Ranges
+- [JuliaRT](https://github.com/iknowjason/juliart):  Cyber Range environment created by [Jason Ostrom](https://twitter.com/securitypuck) using Active Directory and automated templates for building your own Pentest/Red Team/Cyber Range in the Azure cloud!
+- [CyberRange by SECDEVOPS@CUSE](https://github.com/secdevops-cuse/CyberRange): AWS-based Cyber Range.
+
